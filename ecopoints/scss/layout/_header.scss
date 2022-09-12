@@ -1,0 +1,194 @@
+
+.header{
+    width: 100%;
+    height: auto;
+    margin-top: 2em;
+    position: relative;
+
+   &-left{
+    min-width: 400px;
+    margin: 0 auto;
+    transform: translateY(13.5em);
+    text-align: center;
+  
+   }
+   &-right{
+    min-width: 700px;
+    transform: translate(-3rem, 3rem);
+   
+   }
+}
+
+.headtext{
+   
+        &_main{
+            font-size: 2rem;
+            color: $green-d3;
+            letter-spacing: .2em;
+          
+        }
+        &_sub{
+            font-size: 1.2rem;
+            color: $gray;
+            text-align: center;
+            margin-top: .5em;
+        }
+        &_sub2{
+            color: $brown-dot2;
+            font-weight: 700;
+
+        }
+    
+}
+
+
+.logo{
+    position: relative;
+
+    &-dots{
+        position: absolute;
+        top: 0;
+        left: -7rem;
+        width: 8rem;
+        animation: circular 20s linear infinite;
+    }
+    &-dot{
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        width: 2.7rem;
+        height: 2.7rem;
+        @include browndot;
+        box-shadow: $shadow-sml;
+        &-1{
+            top: 19.1rem;
+            left: 5.1rem;
+            animation: float-dot2 5s linear infinite;
+        }
+        &-2{
+            top: 22rem;
+            left: 5rem;
+            animation: float-dot 5s linear 0.3s infinite;
+        }
+        &-3{
+            top: 22.3rem;
+            left: 9.2rem;
+            animation: float 5s linear 1s infinite;
+        }
+        &-4{
+            top: 21rem;
+            left: 7.5rem;
+            animation: float-dot2 5s linear 1.5s infinite;
+        }
+        &-5{
+            top: 23rem;
+            left: 6.7rem;
+            animation: float 5s linear infinite;
+        }
+    }
+    &-wave{
+        position: absolute;
+        &-l{
+            top: 9rem;
+            left:3.5rem;
+            width:12rem;
+            animation: float 5s linear 1s infinite;
+        }
+        &-s{
+            // border: 1px solid red;
+            top: 11rem;
+            left: 4rem;
+            width: 12rem;
+            animation: float 5s linear infinite;
+        }
+    }
+    &-lid{
+        display: block;
+        position: absolute;
+        top: 3.5rem;
+        left: 1rem;
+        width:20rem;
+        height: .4rem;
+        padding-bottom: .1rem;
+        border-top: 5px solid $green-l3;
+        border-bottom: 2px solid $green-l3;
+        background: $white;
+        transform: rotate(18deg);
+        animation: float-lid 5s linear infinite;
+    }
+    &-cup1{
+        position: absolute;
+        top: 5.5rem;
+        left: 1.7rem;
+        width: 17.5rem;
+        animation: moveInRight 1s ease-out;
+        animation: float 5s infinite;
+    }
+
+
+    &-title{
+        position: absolute;
+        top: 10rem;
+        left: 12rem;
+        font-size: 5.5rem;
+        font-weight: 400;
+        color: $gray-d;
+        background:rgba($gray-l, .5);
+        display: inline-block;
+        padding: 0 0.2em;
+        border-radius: 10px;
+        box-shadow: $shadow-sml;
+        animation: float 4s linear infinite;
+    
+    }
+    &-subtitle{
+        position: absolute;
+        top: 16.5rem;
+        left: 24rem;
+        z-index: -10;
+        font-size: 3rem;
+        font-weight: 400;
+        color: $brown-red;
+        background-image: linear-gradient(rgba($white, 0.5), rgba($brown-red, 0.3));        
+        display: inline-block;
+        padding: 0 0.2em;
+        border-radius: 10px;
+        box-shadow: $shadow-sml;
+        animation: float 4.5s linear infinite;
+    }
+    &-subtitle2{
+        font-size: 4.5rem;
+        font-weight: 400;
+        color: $green-d1;
+    }
+}
+
+.shadow{
+    
+    border-radius: 50%;
+    position: absolute;
+    height: 1rem;
+  
+    &-cup{
+        top: 30rem;
+        left: 3.5rem;
+        width: 9rem;
+        background: rgba($gray, 0.3);
+        animation: shadow-s 5s infinite;
+    }
+    &-title{
+        top: 31rem;
+        left: 13.5rem;
+        width: 16rem; 
+        background: rgba($gray, 0.2);
+        animation: shadow-l 4s infinite;
+    }
+    &-subtitle{
+        top: 30rem;
+        left: 25rem;
+        width: 10rem;
+        height: .8rem;
+        background: rgba($gray, 0.25);
+        animation: shadow-m 4.5s infinite;
+    }
+}

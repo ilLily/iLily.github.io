@@ -1,0 +1,102 @@
+.section-member{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    background: rgba($black, .8);
+    transition: all .3s;
+    visibility: hidden;
+}
+#section-member:target{
+        visibility: visible;
+}
+.member{
+    width: 25em;
+    background: white;
+    border: 5px dashed $green-l2;
+    border-radius: 5em;
+    @include abs-center;
+    padding: 1em;
+    
+ 
+    &-head{
+        position: relative;
+        display: block;
+        height: 3em;
+        // border: 1px solid red;
+    
+        &-register{
+            font-size: 2rem;
+            color: $green-d3;
+        }
+        &-login{
+            font-size: 1rem;
+            color: $green-d1;
+        }
+        &-image{
+            width: 1rem;
+            margin: 0 0.3em 0.1em 0.5em;
+        }
+        &-close{
+        text-decoration: none;
+        color: $gray;
+        }
+    }
+    &-body{
+        position: relative;
+        
+        &-img{
+            width: 100%;
+        }
+    }
+}
+.register{
+    &-form{
+        position: absolute;
+        top: 3.5em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15em;
+        &:target{
+            display: contents;
+        }
+    }
+    &-other{
+        margin-top: 6em;
+        display: flex;
+        justify-content: space-evenly; 
+    }
+}
+.login{
+    &-form{
+        position: absolute;
+        top: 3.5em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15em;
+       
+    }
+    &-forgotpassword{
+        position: absolute;
+        top: 7em;
+        right: 0.5em;
+        font-size: .7rem;
+        color: $brown-red;
+    }
+    &-other{
+        margin-top: 6em;
+        display: flex;
+        justify-content: space-evenly;
+        
+    } 
+}
+
+#login{
+    display: none;
+    &:target{
+        display: contents;
+    }
+}
+

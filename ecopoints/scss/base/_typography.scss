@@ -1,0 +1,26 @@
+.heading{
+    &-section{
+        min-width: 25em;
+        display: flex;
+        align-items: center;
+        margin: 0 5em 1em 5em;
+        padding: 2em .8em;
+        border-left: 8px solid $gray-l2;
+        
+        // background-image: linear-gradient( $white, $green-l1);
+
+        &-text{
+            color: $gray-d;
+            font-size: 3rem; 
+            margin-left: 0.5em;
+            order: 2;
+        }
+        &-icon{
+            width: 3.5rem;
+            margin-left: 1em;
+        }
+
+    }
+    
+   
+}

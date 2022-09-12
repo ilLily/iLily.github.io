@@ -1,0 +1,38 @@
+.form{  
+    &-group{
+        display: grid;
+        font-size: 1rem;
+        
+    }
+    &-input{
+        order: 1;
+        border-radius: 2px;
+        background-color: $white;
+        border: none;
+        border-bottom: 3px solid transparent;
+        margin: .5em 0 1.2em 0;
+        
+        &:focus{
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba($black, .1);
+        border-bottom: 3px solid $green-l1;
+        
+        }
+
+        &:required{
+            box-shadow: none;
+        }
+
+        &:focus:invalid{
+        border-bottom: 3px solid red;
+        }
+    }
+    &-label{
+        color: $gray-d;   
+    }
+}
+::placeholder{
+    color: $gray;
+}
+
+
