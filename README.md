@@ -1,1 +1,1 @@
-It Lily demo project
+It is Lily's demo project
